@@ -2,7 +2,7 @@
 				display: flex;
 				align-items: center;
 				font-family: "Geologica", sans-serif;
-				background-image: url(/img/bgcoffee.jpg);
+				background-image: url(./img/bgcoffee.jpg);
 				background-size: cover;
 			}
 
