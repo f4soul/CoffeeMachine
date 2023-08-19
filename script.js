@@ -105,7 +105,7 @@ function getChange(num) {
 			);
 
 			let coinImage = document.createElement("img");
-			coinImage.src = `/img/${coin}rub.png`;
+			coinImage.src = `./img/${coin}rub.png`;
 			coinImage.style.top = `${top}px`;
 			coinImage.style.left = `${left}px`;
 			coinImage.classList.add("coin");
