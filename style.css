@@ -1,0 +1,132 @@
+html {
+	min-height: 100vh;
+}
+
+body {
+	font-family: "Geologica", sans-serif;
+	background-image: url(/img/bgcoffee.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center
+}
+
+.btn-aria {
+	background-color: #0f4555;
+	border: 1px solid #206d85;
+	border-radius: 15px;
+	margin-bottom: 0.5rem;
+}
+
+.btn-aria>span {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 80px;
+	vertical-align: middle;
+	margin-left: 1rem;
+	color: #ebecea;
+}
+
+.coffee-btn {
+	width: 0;
+	height: 0;
+	border-top: 40px solid transparent;
+	border-left: 70px solid #0d3846;
+	border-bottom: 40px solid transparent;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.coffee-btn:hover {
+	position: relative;
+	left: 3px;
+	width: 0;
+	height: 0;
+	transition: 0.3s;
+	border-top: 40px solid transparent;
+	border-left: 80px solid #338aa5;
+	border-bottom: 40px solid transparent;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+#display {
+	width: 100%;
+	height: 200px;
+	background-color: #e8ede7;
+	border: 2px dotted #81bece;
+	border-radius: 15px;
+	color: black;
+	text-align: center;
+	padding: 10px;
+}
+
+img[src$="rub.jpg"]:hover {
+	cursor: pointer;
+	filter: brightness(60%);
+}
+
+img[src$="acc.png"] {
+	width: 220px;
+	border-radius: 15px;
+}
+
+.money>img {
+	padding: 5px;
+}
+
+.money {
+	align-items: center;
+}
+
+.animated {
+	animation-name: hide-bill;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hide-bill {
+	0% {
+		opacity: 1;
+		transform: translateY(0) rotate(90deg);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-10px) rotate(90deg);
+	}
+}
+
+#changeBox {
+	width: 100%;
+	height: 220px;
+	background-color: #e8ede7;
+	border: 2px dotted #81bece;
+	border-radius: 15px;
+	margin-top: 1rem;
+	position: relative;
+}
+
+.btn-secondary {
+	background-color: #0f4555;
+	border-color: #0f4555;
+	border-radius: 15px;
+}
+
+img[src$="rub.png"] {
+	width: 60px;
+	position: absolute;
+}
+
+.progress {
+	height: 1.4rem;
+}
+
+.progress-bar {
+	background-color: #338aa5;
+}
+
+img.coin:hover {
+	filter: contrast(150%);
+	cursor: pointer;
+}

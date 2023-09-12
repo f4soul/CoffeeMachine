@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&family=Open+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/mug_hot.svg" />
+    <script
+      src="https://kit.fontawesome.com/0bdc302baf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Кофейный аппарат</title>
+  </head>
+  <body>
+    <div class="container mt-auto">
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="row btn-aria">
+            <div class="coffee-btn" onclick="getCoffee(45, 'Какао')"></div>
+            <span>Какао - 45 р</span>
+          </div>
+          <div class="row btn-aria">
+            <div class="coffee-btn" onclick="getCoffee(76, 'Латте')"></div>
+            <span>Латте - 76 р</span>
+          </div>
+          <div class="row btn-aria">
+            <div class="coffee-btn" onclick="getCoffee(100, 'Каппучино')"></div>
+            <span>Каппучино - 100 р</span>
+          </div>
+          <div class="row btn-aria">
+            <div class="coffee-btn" onclick="getCoffee(125, 'Раф')"></div>
+            <span>Раф - 125 р</span>
+          </div>
+          <div class="row btn-aria">
+            <div class="coffee-btn" onclick="getCoffee(85, 'Американо')"></div>
+            <span>Американо - 85 р</span>
+          </div>
+          <div class="row btn-aria">
+            <div class="coffee-btn" onclick="getCoffee(35, 'Чай')"></div>
+            <span>Чай - 35 р</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-7">
+              <div id="display">
+                <p id="displayInfo">Внесите деньги</p>
+                <p id="balance">
+                  <i class="fas fa-piggy-bank"></i> Баланс: 0 руб.
+                </p>
+                <div class="progress" hidden>
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                  ></div>
+                </div>
+              </div>
+              <button
+                id="changeButton"
+                class="btn btn-secondary btn-lg btn-block mt-2 mb-2"
+                onclick="getChange(money.value)"
+              >
+                Получить сдачу
+              </button>
+              <button
+                id="cancelButton"
+                class="btn btn-secondary btn-lg btn-block mt-2 mb-2"
+                onclick="location.reload(); return false;"
+              >
+                Сброс
+              </button>
+            </div>
+            <div class="col-md-5 text-center">
+              <input type="hidden" id="money" />
+              <img src="./img/bill_acc.png" class="img-fluid" alt="" />
+              <div id="changeBox" class="mt-2"></div>
+            </div>
+          </div>
+        </div>
+				<div class="money text-center w-100 mt-2 mb-5">
+					<img src="./img/50rub.jpg" alt="" id="test" data-bill-value="50" />
+					<img src="./img/100rub.jpg" alt="" data-bill-value="100" />
+					<img src="./img/500rub.jpg" alt="" data-bill-value="500" />
+				</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
